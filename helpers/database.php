@@ -4,9 +4,6 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Include Supabase configuration
-require_once __DIR__ . '/supabase.php';
-
 function db_connect() {
     // Fallback to local MySQL
     $host = 'localhost';
