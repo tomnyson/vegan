@@ -1,0 +1,4 @@
+admin/*
+demo/*
+node_modules/
+.env
