@@ -64,7 +64,7 @@ require_once 'helpers/database.php';
             <div class="bestseller-badge">HOT</div>
             <?php
             $image_src = '';
-            if (!empty($product['image']) && file_exists($product['image'])) {
+            if (!empty($product['image'])) {
               $image_src = htmlspecialchars($product['image']);
             } else {
               $image_src = 'https://placehold.co/300x200/cccccc/666666?text=No+Image';
@@ -109,7 +109,7 @@ require_once 'helpers/database.php';
       <?php
         foreach ($featured_products as $product) {
           $image_src = '';
-          if (!empty($product['image']) && file_exists($product['image'])) {
+          if (!empty($product['image'])) {
             $image_src = htmlspecialchars($product['image']);
           } else {
             $image_src = 'https://placehold.co/300x200/cccccc/666666?text=No+Image';

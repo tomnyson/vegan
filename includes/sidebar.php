@@ -44,7 +44,7 @@ $best_selling_products = db_query_all("SELECT * FROM products WHERE is_featured 
             <div style="display: flex; gap: 10px; margin-bottom: 15px; padding: 10px; background: var(--bg-light); border-radius: 8px;">
             <?php
               $image_src = '';
-              if (!empty($product['image']) && file_exists($product['image'])) {
+              if (!empty($product['image'])) {
                 $image_src = htmlspecialchars($product['image']);
               } else {
                 $image_src = 'https://placehold.co/300x200/cccccc/666666?text=No+Image';

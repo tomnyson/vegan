@@ -127,7 +127,7 @@ $related_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <div class="topping-card">
                       <?php
                       $image_src = '';
-                      if (!empty($item['image']) && file_exists($item['image'])) {
+                      if (!empty($item['image'])) {
                         $image_src = htmlspecialchars($item['image']);
                       } else {
                         $image_src = 'https://placehold.co/300x200/cccccc/666666?text=No+Image';
@@ -188,7 +188,7 @@ $related_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php
             // Check if related product image exists
             $related_image_src = '';
-            if (!empty($related['image']) && file_exists($related['image'])) {
+            if (!empty($related['image'])) {
               $related_image_src = htmlspecialchars($related['image']);
             } else {
               $related_image_src = 'https://placehold.co/220x140/cccccc/666666?text=No+Image';
