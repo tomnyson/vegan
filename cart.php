@@ -1,6 +1,5 @@
 <?php
 ob_start();
-session_start();
 
 // Function to calculate total price including toppings
 function calculateItemTotalWithToppings($basePrice, $quantity, $options)

@@ -165,7 +165,7 @@ require_once 'helpers/database.php';
             <div class="product-card">
               <?php
               $image_src = '';
-              if (!empty($product['image']) && file_exists($product['image'])) {
+              if (!empty($product['image'])) {
                 $image_src = htmlspecialchars($product['image']);
               } else {
                 $image_src = 'https://placehold.co/300x200/cccccc/666666?text=No+Image';

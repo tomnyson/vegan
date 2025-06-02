@@ -1,5 +1,4 @@
 <?php
-session_start(); // Add session start
 require_once 'helpers/database.php';
 
 $product_id = isset($_GET['product_id']) ? (int)$_GET['product_id'] : 1;

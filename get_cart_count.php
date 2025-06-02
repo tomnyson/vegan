@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once 'helpers/database.php';
 
 // Get total items in cart for current user

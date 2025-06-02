@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require_once 'helpers/database.php';
 
 $error_message = '';

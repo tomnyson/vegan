@@ -1,6 +1,5 @@
 
 <?php
-session_start();
 
 // Get order info from query string
 $order_id = $_GET['order_id'] ?? null;

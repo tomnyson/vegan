@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once 'helpers/database.php';
 
 if (!isset($_SESSION['user_id'])) {
